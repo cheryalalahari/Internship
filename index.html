@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Directory Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <!-- ---------------------------------- Registration Form ---------------------------------- -->
+
+    <main class="container">
+        <h1>Company Directory Portal</h1>
+
+        <section class="registration-form">
+            <h2>Employee Registration Form</h2>
+
+            <form>
+                <label for="Name">Full Name:</label>
+                <input type="text" name="full name" id="Name" required> <br>
+
+                <label for="Email">Email:</label>
+                <input type="email" name="email" id="Email" required> <br>
+                
+                <label for="department">Department:</label>
+                <select name="department" id="department" required> 
+
+                    <option value="IT">IT</option>
+                    <option value="HR">HR</option>
+                    <option value="Finance">Finance</option>
+                    <option value="Marketing">Marketing</option>
+
+
+                </select> <br>
+
+                <label for="employee ID">Employee ID:</label>
+                <input type="number" name="employee ID" id="employee ID" required> <br>
+
+                <label for="Profile Picture Url">Profile Picture URL:</label>
+                <input type="url" name="Profile Picture url" id="Profile Picture url" required> <br>
+
+                <button type="submit">Register Employee</button>
+
+            </form>
+        </section>
+
+        <!-- --------------------------------- Employee List -----------------------------------  -->
+         <section class="employee-list">
+            <h2>Employee List</h2>
+
+            <ol>
+
+                <li><a href="#">John Doe - john@example.com</a></li> <hr>
+                <li><a href="@">Jane Smith - jane@example.com</a></li> <hr>
+            </ol>
+         </section>
+
+         <!-- ------------------------------- Employee Details ---------------------------------  -->
+
+         <section class="employee-details">
+            <h2>Employee Details</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Employee ID</th>
+                        <th>Department</th>
+                        <th>Profile Picture</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>John Doe</td>
+                        <td>12345</td>
+                        <td>IT</td>
+                        <td><img src="https://res.cloudinary.com/wfdns6x2g6/image/upload/v1509007989/user_psolwi.png" alt="" width="50px" height="50px"></td>
+                    </tr>
+                        <td colspan="4"><hr></td>
+                    <tr>
+                        <td>Jane Smith</td>
+                        <td>54321</td>
+                        <td>HR</td>
+                        <td><img src="https://flyclipart.com/thumb2/jane-doe-cliparts-708896.png" alt="" width="50px" height="50px"></td>
+                    </tr>
+
+                        <td colspan="4"><hr></td>
+                </tbody>
+            </table>
+         </section>
+
+         <!-- --------------------------------- Company Location --------------------------------  -->
+
+         <section>
+            <h2>Company Location</h2>
+            <div id="locaction-map">
+
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3805.1985006906502!2d78.38741457369224!3d17.498035299611097!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb91f3fdf6bde9%3A0x752db86a6ab3be2a!2sInnomatics%20Research%20Labs!5e0!3m2!1sen!2sin!4v1727331736109!5m2!1sen!2sin" width="100%" height="350" style="border:0; border-radius: 8px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+         </section>
+    </main>
+</body>
+</html>
